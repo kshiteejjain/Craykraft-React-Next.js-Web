@@ -1,0 +1,128 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{text-transform: uppercase;}
+
+p{color: #545454;font-size: 15px;line-height:28px;font-weight: 300;margin:0 0 15px 0}
+.container{max-width: 1320px; width: 100%;margin: 0 auto;}
+header{background-color: #0C0C0C;width: 100%;display: flex;display:-webkit-flex;border-bottom: 1px solid #2D2D2F;}
+.flex{display: flex;display:-webkit-flex;align-items: center;justify-content: space-between;}
+header nav.show{display: block;}
+header nav a{color:#B0B0B0;padding: 0 20px;}
+header nav a:hover{color:#fff;}
+.btn{padding:10px 25px;display: inline-block;border-radius: 30px;text-transform: uppercase;}
+.btn-primary{background-color: #79D222;color: #0C0C0C;font-weight: bold;}
+.btn-secondary{background-color: #0C0C0C;color: #B0B0B0;border:1px solid #B0B0B0;margin-left: 20px;}
+.banner{background-color: #0C0C0C;width: 100%;padding:20px 0 50px 0;}
+.banner h2{font-size: 69px;font-weight: bold;color: #fff;margin:20px 0;}
+.banner .left{flex-basis: 50%;}
+.txt-green{color:#79D222}
+.about{padding: 100px 0;}
+.about h2{font-size: 17px;}
+.about h4{position: relative;color:#19191A;margin-bottom:10px;}
+.about h4:after{content:'';width:35px;height: 3px;background-color: #79D222;position: absolute;bottom:-4px;left: 0;}
+.about .left{flex-basis: 58%;}
+.about h3{font-size: 40px;margin:0;}
+.about h4{font-size: 20px;}
+.expertise{background-image: url(../public/expertise-bg.jpg);background-repeat: no-repeat;background-size: cover;position: relative; text-align: center;padding: 100px 0;}
+.expertise p{color:#D4D4D4;text-align: center;}
+.expertise h2{color: #fff;font-size: 60px;margin:0;}
+.expertise:before{content: '';width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.8);position: absolute;left:0;right: 0;top:0;bottom:0;}
+.expertise .container{position: relative;}
+.expertise ul{list-style: none;margin:100px 0;padding:0;}
+.expertise ul li{flex-basis: 23%;text-align: center;}
+.expertise ul li h3{color: #fff;margin:10px 0;}
+.portfolio{text-align: center;padding: 100px 0;}
+.portfolio h2{color: #19191A;font-size: 60px;margin:0;}
+.portfolio .left{width: 46%;display: inline-block;margin-top: 20px;}
+.portfolio .portfolio-list{position: relative;margin-bottom: 27px;}
+.portfolio .portfolio-detail{position: absolute;top:40%;left: 0;right: 0;}
+.portfolio .portfolio-detail h3{color: #fff;margin:8px 0 0 0;font-size:17px;}
+.team{text-align: center;padding:20px 0 100px 0;}
+.team h2{color: #19191A;font-size: 60px;margin:0;}
+.team ul{list-style: none;margin:50px 0 0 0;padding:0;}
+.team ul li h3{font-size: 24px;margin-bottom:10px;}
+.team ul li p{color:#848484;font-size: 16px;}
+.social-profile a{padding: 0 5px;opacity: 0.7;}
+.social-profile a:hover{opacity:1;}
+footer{background-color: #0C0C0C;padding:50px 0 0 0;}
+footer .container .col-footer{flex-basis:15%;}
+footer .container .col-footer:nth-child(1){flex-basis:30%;}
+footer .container a {color: #B0B0B0;display: block;font-weight: 300;}
+footer .container a:hover{color:#fff}
+footer .container p {color: #B0B0B0;}
+footer .container h3 {color: #fff;font-weight: bold;font-size: 23px;}
+footer ul{list-style: none;margin:0;padding:0;}
+footer ul li a{padding: 5px 0;font-size: 14px;}
+footer .copyright{background-color: #000000;padding:8px 0;margin-top: 40px;}
+footer .copyright a{display: inline-block;}
+footer .copyright p{margin-bottom: 0;font-size: 12px;}
+.menu-bar.open span{background-color:#fff;}
+.menu-bar{cursor:pointer;height: 16px;position:absolute;z-index:99;right:15px;top:27px;display:none;}
+.menu-bar span { background-color:#fff; width:25px; height:2px; -webkit-transition:0.2s ease-in-out; transition:0.2s ease-in-out; -webkit-tap-highlight-color: transparent;display: block;margin:2px 0;position:relative;}
+.menu-bar span {left:0;}
+.menu-bar span:nth-child(1) { top: 0px; }
+.menu-bar span:nth-child(2) { top: 3px; }
+.menu-bar span:nth-child(3) { bottom:-6px; }
+.open.menu-bar span:nth-child(1) {-webkit-transform:rotate(45deg) translate(8.5px, 3.5px);-ms-transform:rotate(45deg) translate(8.5px, 3.5px);transform:rotate(45deg) translate(8.5px, 3.5px);}
+.open.menu-bar span:nth-child(2) { opacity: 0; }
+.open.menu-bar span:nth-child(3) {-webkit-transform:rotate(-45deg) translate(5.5px, -1px);-ms-transform:rotate(-45deg) translate(5.5px, -1px);transform:rotate(-45deg) translate(5.5px, -1px);}
+.full-modal{background-color: #000;position: fixed;width:98%;height:calc(98% - 70px);left:0;right:0;margin: 0 auto;top:10px;z-index:2;}
+.overlay{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index:1;background-color:rgba(0, 0, 0, 0.8);}
+.full-modal iframe{width: 100%;height:100%;}
+.modal-header{display: flex;justify-content: space-between;color:#fff;padding: 15px;}
+.modal-header h5{font-size: 20px;margin: 0;}
+.modal-header .close{cursor:pointer;background-color:#fff;border: none;border-radius:2px;width:23px;height:23px;font-size: 19px;line-height:23px;text-align: center;}
+
+@media(max-width:1024px){
+  .container{max-width: 100%;padding:0 15px}
+  h3, h2{font-size:35px !important;}
+  .expertise ul li h3{font-size: 17px !important;}
+  .portfolio .portfolio-detail h3{font-size: 14px !important;}
+  .team ul li h3{font-size: 23px !important;}
+  footer .container h3{font-size: 17px !important;}
+  footer .container .col-footer {flex-basis: 24%;}
+}
+
+@media(max-width:767px){
+  .container{max-width: 100%;padding:0 15px}
+  .banner h2{font-size: 24px;}
+  .banner .container.flex{flex-direction: column;}
+  .about {padding: 30px 0;}
+  .about .container.flex{flex-direction: column;}
+  .about h3 br{display: none;}
+  .about h3{font-size: 24px;}
+  .expertise h2{font-size: 24px;}
+  .expertise{padding: 40px 0;}
+  .expertise ul{flex-direction: column;margin:30px 0;}
+  .portfolio{padding: 40px 0;}
+  .portfolio h2{font-size: 24px;}
+  .portfolio .left{width: 100%;}
+  .portfolio .portfolio-detail{top:23%}
+  .team h2{font-size: 24px;}
+  .team ul{flex-direction: column;}
+  .team ul li{margin-bottom:35px;}
+  .team ul li h3{margin-top: 5px;}
+  footer .container{flex-direction: column;}
+  footer .container .col-footer{width: 100%;}
+  .team{padding-bottom: 0;}
+  header nav{position: absolute;width: 100%;left: 0;right:0;height:100%;top: 100px;background-color: #0C0C0C;z-index: 1;display: none;}
+  header nav a{display: block;padding: 20px;}
+  .menu-bar{display: block;}
+  .logo img{width: 120px;}
+  .btn{font-size: 12px;}
+  .banner{padding-top: 0;}
+  .logo{margin:19px 0 10px 0}
+}
